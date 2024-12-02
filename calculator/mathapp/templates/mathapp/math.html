@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+          .container{
+            width: 300px;
+            border: 2px;
+            background-color: grey;
+            text-align: center;
+            align:center;
+            
+            padding: 0px;
+
+          }
+         
+            
+
+        </style>
+    </head>
+    
+    <body bgcolor="lightcoral">
+        
+        <div class="formelt" allign="center"><h1>POWER OF LAMP.</h1> </div>
+        <form method="POST" allign="center">
+            {% csrf_token %}
+            <div class="container" allign="center">
+             Intensity: <input type="text" name="intensity" value={{i}}></input>m<sup>2</sup><br/>
+
+            </div>
+            <div class="container">
+                Resistance:<input type="text" name="resistance" value={{r}}></input>(in ohm's)<br/>
+
+            </div>
+            <div class="container">
+                <input type="submit" value="PRESS"></input><br/>
+
+            </div>
+            <div class="container">
+                Power:<input type="text" name="power" value={{power}}></input>m<sup>2</sup><br/>            
+            </div>
+        </form>
+    </body>
+    
+</html>
